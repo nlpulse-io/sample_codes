@@ -64,4 +64,21 @@ $ nvidia-smi
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
 
+
+# Preparacao:
+cd /var/server1/docker/volumes/code/project/lab1/poc_qaml2/experimentos/peft_quantization
+git reset --hard && git fetch && git pull
+python3 -m venv ~/venv/peft_quantization
+source ~/venv/peft_quantization/bin/activate
+pip install --upgrade pip
+pip install -U bitsandbytes
+pip install -U git+https://github.com/huggingface/transformers.git 
+pip install -U git+https://github.com/huggingface/peft.git
+# pip install -U git+https://github.com/huggingface/accelerate.git
+# current version of Accelerate on GitHub breaks QLoRa
+# Using standard pip instead
+pip install -U accelerate
+pip install -U datasets
+pip install -U scipy
+
 '''

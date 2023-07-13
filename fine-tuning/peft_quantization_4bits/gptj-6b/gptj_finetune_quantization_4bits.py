@@ -68,6 +68,7 @@ lora_args = LoraConfig(
 )
 model = get_peft_model(model, lora_args)
 model.print_trainable_parameters()
+# trainable params: 3,670,016 || all params: 3,235,980,512 || trainable%: 0.11341279672082277
 
 # dataset
 data = load_dataset("Abirate/english_quotes")
@@ -172,15 +173,15 @@ git reset --hard && git fetch && git pull
 python3 -m venv ~/venv/peft_quantization
 source ~/venv/peft_quantization/bin/activate
 pip install --upgrade pip
-pip install -q -U bitsandbytes
-pip install -q -U git+https://github.com/huggingface/transformers.git 
-pip install -q -U git+https://github.com/huggingface/peft.git
-# pip install -q -U git+https://github.com/huggingface/accelerate.git
+pip install -U bitsandbytes
+pip install -U git+https://github.com/huggingface/transformers.git 
+pip install -U git+https://github.com/huggingface/peft.git
+# pip install -U git+https://github.com/huggingface/accelerate.git
 # current version of Accelerate on GitHub breaks QLoRa
 # Using standard pip instead
-pip install -q -U accelerate
-pip install -q -U datasets
-pip install -q -U scipy
+pip install -U accelerate
+pip install -U datasets
+pip install -U scipy
 
 $ python -V
 Python 3.10.6
