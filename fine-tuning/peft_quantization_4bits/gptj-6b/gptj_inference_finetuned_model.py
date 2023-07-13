@@ -45,7 +45,7 @@ CUDA_VISIBLE_DEVICES=1 model_path=/var/server1/docker/volumes/shared/model/gptj_
 “I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”
 Marilyn Monroe
 
-# Saida (todo os 939 steps e 3 epocas):
+# Saida (todos os 939 steps e 3 epocas):
 >>  I'm selfish, impatient and  =>  I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle.
 
 # Saida - modelo original:
