@@ -1,4 +1,4 @@
-# Baseado em: https://medium.com/@jain.sm/finetuning-llama-2-0-on-colab-with-1-gpu-7ea73a8d3db9
+# Baseado em: https://towardsdatascience.com/qlora-fine-tune-a-large-language-model-on-your-gpu-27bed5a03e2b
 
 
 import os
